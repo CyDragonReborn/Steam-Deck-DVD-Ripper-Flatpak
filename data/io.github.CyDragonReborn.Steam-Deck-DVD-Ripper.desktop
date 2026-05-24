@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=DVD Ripper
+Comment=Rip episodic DVDs with GPU-accelerated encoding
+Exec=dvd-ripper
+Icon=io.github.CyDragonReborn.Steam-Deck-DVD-Ripper
+Terminal=false
+Type=Application
+Categories=AudioVideo;Video;AudioVideoEditing;
+Keywords=dvd;rip;encode;ffmpeg;vaapi;amd;
+StartupNotify=true

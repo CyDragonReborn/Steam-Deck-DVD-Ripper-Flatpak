@@ -1,0 +1,64 @@
+{
+    "app-id": "io.github.CyDragonReborn.Steam-Deck-DVD-Ripper",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "46",
+    "sdk": "org.gnome.Sdk",
+    "command": "dvd-ripper",
+    "finish-args": [
+        "--share=network",
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--device=dri",
+        "--filesystem=home",
+        "--filesystem=/run/media:create",
+        "--filesystem=/media:create",
+        "--filesystem=/mnt:create"
+    ],
+    "add-extensions": {
+        "org.freedesktop.Platform.ffmpeg-full": {
+            "directory": "lib/ffmpeg",
+            "version": "24.08",
+            "autodelete": false
+        }
+    },
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/man",
+        "/share/doc",
+        "/share/gtk-doc",
+        "/share/man",
+        "*.la",
+        "*.a"
+    ],
+    "modules": [
+        {
+            "name": "lsdvd",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://sourceforge.net/projects/lsdvd/files/lsdvd/lsdvd-0.17/lsdvd-0.17.tar.bz2/download",
+                    "sha256": "24e1b1e9a37e48b2f848180a640c04260b8fd3f4496f3eec3b96bd32c7488b3d"
+                }
+            ]
+        },
+        {
+            "name": "dvd-ripper",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app --no-deps .",
+                "install -Dm644 data/io.github.CyDragonReborn.Steam-Deck-DVD-Ripper.desktop /app/share/applications/io.github.CyDragonReborn.Steam-Deck-DVD-Ripper.desktop",
+                "install -Dm644 data/io.github.CyDragonReborn.Steam-Deck-DVD-Ripper.svg /app/share/icons/hicolor/scalable/apps/io.github.CyDragonReborn.Steam-Deck-DVD-Ripper.svg",
+                "install -Dm644 data/io.github.CyDragonReborn.Steam-Deck-DVD-Ripper.metainfo.xml /app/share/metainfo/io.github.CyDragonReborn.Steam-Deck-DVD-Ripper.metainfo.xml"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/CyDragonReborn/Steam-Deck-DVD-Ripper.git",
+                    "tag": "v1.0.0"
+                }
+            ]
+        }
+    ]
+}
