@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dvd-ripper"
+version = "1.0.0"
+description = "Rip episodic DVDs with GPU-accelerated encoding"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "PyGObject>=3.46",
+]
+
+[project.scripts]
+dvd-ripper = "dvd_ripper.gtk_app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["dvd_ripper*"]

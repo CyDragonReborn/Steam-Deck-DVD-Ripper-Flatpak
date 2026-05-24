@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=DVD Ripper
+Comment=Rip episodic DVDs with AMD GPU encoding
+Exec=dvd-ripper
+Icon=io.github.dvdripper.app
+Terminal=false
+Type=Application
+Categories=AudioVideo;Video;AudioVideoEditing;
+Keywords=dvd;rip;encode;ffmpeg;vaapi;amd;
+StartupNotify=true

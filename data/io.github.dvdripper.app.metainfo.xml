@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.dvdripper.app</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>DVD Ripper</name>
+  <summary>Rip episodic DVDs with GPU-accelerated encoding</summary>
+  <description>
+    <p>
+      A modern DVD ripping application designed for Linux desktops and the Steam Deck.
+      Rip episodic DVDs, detect duplicates, merge chronologically, and encode to MP4
+      with hardware-accelerated AMD VAAPI encoding.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>AMD VAAPI GPU encoding (H.264, HEVC, AV1)</li>
+      <li>Automatic duplicate detection and removal</li>
+      <li>Chronological episode merging</li>
+      <li>Deinterlacing and video cleanup</li>
+      <li>Subtitle support (soft or burned-in)</li>
+      <li>Upscaling to 720p/1080p/1440p/4K</li>
+      <li>Play All mode for single-file output</li>
+      <li>ISO and VIDEO_TS folder support</li>
+      <li>Native GTK4/Libadwaita interface</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">io.github.dvdripper.app.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://example.com/screenshot1.png</image>
+      <caption>Main window showing DVD scan results</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://github.com/dvd-ripper/dvd-ripper</url>
+  <url type="bugtracker">https://github.com/dvd-ripper/dvd-ripper/issues</url>
+  <url type="vcs-browser">https://github.com/dvd-ripper/dvd-ripper</url>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="1.0.0" date="2026-05-23">
+      <description>
+        <p>Initial release</p>
+        <ul>
+          <li>AMD VAAPI GPU encoding support</li>
+          <li>GTK4/Libadwaita desktop interface</li>
+          <li>Flatpak packaging for Steam Deck</li>
+          <li>Play All and Episodes modes</li>
+          <li>Duplicate detection</li>
+          <li>Subtitle support</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <developer id="io.github.dvdripper">
+    <name>DVD Ripper Contributors</name>
+  </developer>
+</component>

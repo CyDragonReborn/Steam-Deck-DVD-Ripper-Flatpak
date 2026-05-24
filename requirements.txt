@@ -1,0 +1,17 @@
+# DVD Ripper requirements
+# Core dependencies (these tools must be installed on the system):
+#   - ffmpeg (with dvdvideo support)
+#   - ffprobe (comes with ffmpeg)
+#   - lsdvd
+#   - HandBrakeCLI (HandBrake)
+#   - libdvdcss2 (for encrypted DVDs)
+#
+# Install on Ubuntu/Debian:
+#   sudo apt install ffmpeg lsdvd handbrake-cli libdvd-pkg
+#   sudo dpkg-reconfigure libdvd-pkg
+#
+# Install on Fedora:
+#   sudo dnf install ffmpeg lsdvd HandBrake-gui libdvdcss
+#
+# Install on Arch:
+#   sudo pacman -S ffmpeg lsdvd handbrake libdvdcss

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="disc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff"/>
+      <stop offset="100%" style="stop-color:#00ff88"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="20" fill="url(#bg)"/>
+  <circle cx="64" cy="64" r="40" fill="none" stroke="url(#disc)" stroke-width="6"/>
+  <circle cx="64" cy="64" r="28" fill="none" stroke="url(#disc)" stroke-width="3" opacity="0.5"/>
+  <circle cx="64" cy="64" r="8" fill="url(#disc)"/>
+  <path d="M64 24 L64 12" stroke="url(#disc)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M64 104 L64 116" stroke="url(#disc)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M24 64 L12 64" stroke="url(#disc)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M104 64 L116 64" stroke="url(#disc)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M36 36 L28 28" stroke="url(#disc)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M92 92 L100 100" stroke="url(#disc)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M92 36 L100 28" stroke="url(#disc)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M36 92 L28 100" stroke="url(#disc)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+</svg>

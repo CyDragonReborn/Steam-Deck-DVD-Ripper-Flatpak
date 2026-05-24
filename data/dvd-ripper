@@ -1,0 +1,8 @@
+#!/bin/bash
+# DVD Ripper Flatpak launcher
+# Sets up PATH for ffmpeg from the Flatpak extension
+
+export PATH="/app/lib/ffmpeg/bin:$PATH"
+export LD_LIBRARY_PATH="/app/lib/ffmpeg/lib:$LD_LIBRARY_PATH"
+
+exec python3 -m dvd_ripper.gtk_app "$@"
